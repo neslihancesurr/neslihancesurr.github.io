@@ -30,5 +30,5 @@ I am a Master's student in Artificial Intelligence in [the department of Compute
 
 Before my current studies, I earned a Bachelor's degree in Comparative Linguistics and French Literature from [Galatasaray University](https://gsu.edu.tr/tr) and an M.A. in Linguistics from [Boğaziçi University](https://bogazici.edu.tr/), where my research centered on linguistic typology and morphosyntax. For my master's thesis, I investigated negation in Pazar Laz, a low-resource minority language spoken in northeastern Turkey.
 
-My thesis <em>Negation in Pazar Laz<em> can be accessed <a href="/assets/pdf/negation_in_pazar_laz_2023.pdf" target="_blank">here</a>.
+My thesis <em>Negation in Pazar Laz</em> can be accessed <a href="/assets/pdf/negation_in_pazar_laz_2023.pdf" target="_blank">here</a>.
 
