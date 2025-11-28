@@ -424,16 +424,16 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+    },{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-our-paper-a-semi-automated-approach-to-the-annotation-of-argument-structures-in-turkish-datasets-is-now-published-in-the-proceedings-of-the-13th-global-wordnet-conference-read-it-on-the-acl-anthology",
+          title: 'Our paper, “A Semi-Automated Approach to the Annotation of Argument Structures in Turkish...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
