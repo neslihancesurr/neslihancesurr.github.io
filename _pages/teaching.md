@@ -11,9 +11,13 @@ nav_order: 3
 
 **Comparative Language Studies I and II** | Galatasaray University
 *Fall 2021-2022, Fall 2022-2023, Fall 2023-2024*
+
 **Overview :** Developed a full semester curriculum covering phonological inventories, morphological classification, noun/verb phrase syntax, and linguistic universals.
+
 **Scope :** Materials, mostly based on \textit{Introduction to Linguistic Typology} by Viveka Velupillai, include analyses of diverse language families (e.g., Austronesian, Niger-Congo, Algo-Asiatic) to illustrate concepts like ergativity, evidentiality, and noun class systems.
+
 **Materials :** Slide decks are listed below. Note: All course content is in French.
+
 * **Materials:**
     * <a href="/assets/pdf/Typology/1Intro.pdf" target="_blank">📄 Lecture 1: Introduction </a>
     * <a href="/assets/pdf/Typology/2universaux.pdf" target="_blank">📄 Lecture 2: Universals </a>
