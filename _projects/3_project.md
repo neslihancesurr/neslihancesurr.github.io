@@ -2,7 +2,7 @@
 layout: page
 title: Automatic Semantic Frame Classification
 description: Classifying semantic frames using sentence embeddings
-img: assets/img/frame_classification.jpg
+img: assets/img/framenet_classification.jpg
 importance: 3
 category: work
 related_publications: false
