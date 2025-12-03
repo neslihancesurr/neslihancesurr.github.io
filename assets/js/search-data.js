@@ -405,9 +405,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-a-semi-automated-approach-to-the-annotation-of-argument-structures-in-turkish-datasets-is-now-published-in-the-proceedings-of-the-13th-global-wordnet-conference-read-it-on-the-acl-anthology",
           title: 'Our paper, “A Semi-Automated Approach to the Annotation of Argument Structures in Turkish...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-custom-amr-graph-builder",
+          title: 'Custom AMR Graph Builder',
+          description: "A Java-based parser for transforming Google Sheets indentation into AMR Graphs",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
