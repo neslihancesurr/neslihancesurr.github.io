@@ -410,9 +410,9 @@ ninja.data = [{
           description: "A Java-based parser for transforming Google Sheets indentation into AMR Graphs",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-turkish-amr-guidelines",
+          title: 'Turkish AMR Guidelines',
+          description: "Developing standard annotation guidelines for Abstract Meaning Representation in Turkish",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
