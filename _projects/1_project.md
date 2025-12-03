@@ -2,7 +2,7 @@
 layout: page
 title: Custom AMR Graph Builder
 description: A Java-based parser for transforming Google Sheets indentation into AMR Graphs
-img: assets/img/amr-project-banner.jpg
+img: assets/img/amr_graph.jpg
 importance: 1
 category: work
 related_publications: false
