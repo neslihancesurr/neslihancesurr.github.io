@@ -23,10 +23,10 @@ icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name 
 # -----------------------------------------------------------------------------
 email: neslihan.cesur@ozu.edu.tr
 github_username: neslihancesurr
-linkedin_username: neslihan-cesur   # CHANGE THIS if your URL is different
-scholar_userid:                     # Paste your Google Scholar ID here (optional)
-orcid_id:                           # Paste your ORCID ID here (optional)
-twitter_username:                   # Optional
+linkedin_username: neslihan-cesur
+scholar_userid: xcHEB0EAAAAJ
+orcid_id:
+twitter_username:
 
 url: https://neslihancesurr.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -59,7 +59,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 bib_search: true
