@@ -10,6 +10,8 @@ related_publications: false
 
 This Java project is designed to construct **Abstract Meaning Representation (AMR) Graphs** by parsing a specific, custom "Penman-like" notation.
 
+**[View the Project on GitHub](https://github.com/neslihancesurr/AMRGraphProcessor)**
+
 Unlike standard Penman notation (which uses parentheses for nesting), this project is designed to process data exported from **Google Sheets to CSV**. It relies on **indentation levels** (represented by empty CSV cells) to determine the parent-child relationships between concepts.
 
 ## Input Format (The "Google Sheets" Notation)
