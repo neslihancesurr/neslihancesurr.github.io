@@ -1,81 +1,87 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Custom AMR Graph Builder
+description: A Java-based parser for transforming Google Sheets indentation into AMR Graphs
+img: assets/img/amr-project-banner.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This Java project is designed to construct **Abstract Meaning Representation (AMR) Graphs** by parsing a specific, custom "Penman-like" notation. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Unlike standard Penman notation (which uses parentheses for nesting), this project is designed to process data exported from **Google Sheets to CSV**. It relies on **indentation levels** (represented by empty CSV cells) to determine the parent-child relationships between concepts.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/google-sheet-input.jpg" title="Google Sheets Input" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/java-parser-logic.jpg" title="Java Parsing Logic" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/amr-graph-output.jpg" title="AMR Graph Output" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    The workflow: Raw data is entered in Google Sheets (Left), parsed by the FileReader algorithm (Middle), and reconstructed into a directed AMR Graph (Right).
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Input Format (The "Google Sheets" Notation)
+
+The parser expects a **CSV file** exported from Google Sheets. The logic separates graphs by headers and determines hierarchy via column indentation.
+
+### Spreadsheet View (Visual)
+
+| Column A (ID/Root) | Column B (Lvl 1) | Column C (Lvl 2) | Note |
+| :--- | :--- | :--- | :--- |
+| **0463.train** | **SÜREKLİ İLGİLENDİ .** | | *Header Line* |
+| `2/ilgilendi` | | | *Root Node (Indent 0)* |
+| | `1/sürekli:frequency` | | *Child of ilgilendi (Indent 1)* |
+| | `o:ARG0` | | *Child of ilgilendi (Indent 1)* |
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/csv-indentation-detail.jpg" title="Detailed CSV View" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Visualizing the Indentation Logic: The parser reads empty cells to calculate depth. '2/ilgilendi' is at indent 0, while '1/sürekli' is at indent 1.
+</div>
+
+## Parsing Logic & Algorithm
+
+The `FileReader.java` uses a depth-based reconstruction algorithm to parse these nodes.
+1.  **Intermediate Parsing:** It reads the CSV line by line, counting empty strings to determine the `indent` integer.
+2.  **Graph Construction:**
+    * It iterates through the list of `IndentNodes`.
+    * If `nextNode` indent is **+1**, a direct edge is added.
+    * If `nextNode` indent is **<= current**, the algorithm backtracks to find the correct parent.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/java-class-structure.jpg" title="Java Class Structure" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/console-output.jpg" title="Console Output" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: The Project Structure (AMRGraph, AMRNode, IndentNode). Right: The resulting adjacency list printed to the console.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Usage Code
+
+To run the parser, ensure your CSV is in the `files/` directory and run the main method:
 
 {% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+```java
+// In FileReader.java
+public static void main(String[] args) throws IOException {
+    String csvFile = "files/amrtest7.csv";
+    ArrayList<AMRGraph> graphs = processCSVFile(csvFile);
+    for (AMRGraph graph : graphs) {
+        graph.printGraph();
+    }
+}
