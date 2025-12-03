@@ -415,9 +415,9 @@ ninja.data = [{
           description: "Developing standard annotation guidelines for Abstract Meaning Representation in Turkish",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-automatic-semantic-frame-classification",
+          title: 'Automatic Semantic Frame Classification',
+          description: "Classifying semantic frames using sentence embeddings",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
