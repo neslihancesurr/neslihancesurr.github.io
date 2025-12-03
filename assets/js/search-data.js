@@ -439,7 +439,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/neslihan-cesur", "_blank");
+          window.open("https://www.linkedin.com/in/neslihancesur", "_blank");
         },
       },{
         id: 'social-scholar',
