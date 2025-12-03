@@ -18,15 +18,6 @@ keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-# -----------------------------------------------------------------------------
-# Social integration
-# -----------------------------------------------------------------------------
-github: https://github.com/neslihanCesur
-linkedin: https://linkedin.com/in/neslihan-cesur
-twitter: ''  # keep empty if unused
-scholar: https://scholar.google.com/citations?user=xcHEB0EAAAAJ
-email: mailto:neslihan.cesur@ozu.edu.tr
-
 
 url: https://neslihancesurr.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
