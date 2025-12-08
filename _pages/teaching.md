@@ -41,10 +41,10 @@ nav_order: 3
 ---
 
 **Data Science with Python** | *Özyeğin University*
-* Instructed students in mostly-used python libraries such as **NumPy**, **pandas**, and **NumPy**  to predictive modeling using **scikit-learn**.
+* Instructed students in python libraries such as **NumPy**, **pandas**, and **Scikit-learn** .
 * Designed hands-on lab exercises focusing on real-world applications, including data cleaning, visualization, and regression analysis.
 * **Materials:**
-    * <a href="https://github.com/neslihancesurr/](https://github.com/neslihancesurr/python-labs" target="_blank">🐍 View Lab Notebooks on GitHub</a>
+    * <a href="https://github.com/neslihancesurr/python-labs" target="_blank">🐍 View Lab Notebooks on GitHub</a>
 ---
 
 **Formal Languages and Automata Theory** *Özyeğin University*
