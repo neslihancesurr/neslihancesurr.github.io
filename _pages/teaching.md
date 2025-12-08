@@ -44,7 +44,8 @@ nav_order: 3
 * Instructed students in python libraries such as **NumPy**, **pandas**, and **Scikit-learn** .
 * Designed hands-on lab exercises focusing on real-world applications, including data cleaning, visualization, and regression analysis.
 * **Materials:**
-    * <a href="https://github.com/neslihancesurr/python-labs" target="_blank">🐍 View Lab Notebooks on GitHub</a>
+    * <a href="https://github.com/neslihancesurr/python-labs" target="_blank">💻 View Lab Notebooks on GitHub</a>
+    
 ---
 
 **Formal Languages and Automata Theory** *Özyeğin University*
