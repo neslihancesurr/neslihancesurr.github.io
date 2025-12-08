@@ -10,7 +10,8 @@ nav_order: 3
 ### Instructor
 
 **Comparative Language Studies I and II** | Galatasaray University
-*Fall 2021-2022, Fall 2022-2023, Fall 2023-2024*
+*Fall 2021--2024*
+*Spring 2021--2024*
 
 **Overview :** Developed a full semester curriculum covering phonological inventories, morphological classification, noun/verb phrase syntax, and linguistic universals.
 
