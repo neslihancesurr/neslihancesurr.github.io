@@ -32,23 +32,24 @@ nav_order: 3
 
 ### Teaching Assistant
 
-**Data Structures & Algorithms** *Özyeğin University*
-* Conducting revision labs for CS201: 
-* Basic algorithms
+**Data Structures & Algorithms (CS201)** | *Özyeğin University*
+* Conducted revision labs focusing on the implementation of core structures, including Linked Lists, Trees, and Hash Maps.
+* Developed supplementary code examples and slides to bridge theoretical concepts with practical application.
 * **Materials:**
-    * <a href="/assets/pdf/syntax_101.pdf" target="_blank">📄 Revision 1: Arrays and Linked Lists</a>
+    * <a href="https://github.com/neslihancesurr/DataStructures" target="_blank">💻 View Source Code on GitHub</a>
+    
 ---
-**Data Science with Python** *Özyeğin University*
-* Python labs
-* 
+
+**Data Science with Python** | *Özyeğin University*
+* Instructed students in mostly-used python libraries such as **NumPy**, **pandas**, and **NumPy**  to predictive modeling using **scikit-learn**.
+* Designed hands-on lab exercises focusing on real-world applications, including data cleaning, visualization, and regression analysis.
 * **Materials:**
-    * <a href="/assets/pdf/syntax_101.pdf" target="_blank">📄 Lab 1: Basics in Python</a>
+    * <a href="https://github.com/neslihancesurr/](https://github.com/neslihancesurr/python-labs" target="_blank">🐍 View Lab Notebooks on GitHub</a>
 ---
 
 **Formal Languages and Automata Theory** *Özyeğin University*
 * Conducting lab sessions, which mostly prioritizes self-work and solving exercises on a custom program.
 * Generating output test files for the exam.
-* **Materials:**
-    * <a href="/assets/pdf/syntax_101.pdf" target="_blank">📄 Automatic Test Generation Code</a>
+
 ---
 
