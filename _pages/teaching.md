@@ -14,7 +14,7 @@ nav_order: 3
 
 **Overview :** Developed a full semester curriculum covering phonological inventories, morphological classification, noun/verb phrase syntax, and linguistic universals.
 
-**Scope :** Materials, mostly based on \textit{Introduction to Linguistic Typology} by Viveka Velupillai, include analyses of diverse language families (e.g., Austronesian, Niger-Congo, Algo-Asiatic) to illustrate concepts like ergativity, evidentiality, and noun class systems.
+**Scope :** Materials, mostly based on *Introduction to Linguistic Typology* by Viveka Velupillai, include analyses of diverse language families (e.g., Austronesian, Niger-Congo, Algo-Asiatic) to illustrate concepts like ergativity, evidentiality, and noun class systems.
 
 **Materials :** Slide decks are listed below. Note: All course content is in French.
 
