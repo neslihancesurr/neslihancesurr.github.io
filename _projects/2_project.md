@@ -2,7 +2,7 @@
 layout: page
 title: Hepsiemlak Web Scraping
 description: A Python Scrapy crawler for extracting structured apartment listing data from a Turkish real-estate platform
-img: assets/img/hepsiemlak.jpg
+img: assets/img/scrapy.png
 importance: 3
 category: work
 related_publications: false
