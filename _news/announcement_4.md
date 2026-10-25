@@ -1,4 +1,11 @@
-📢 **New video on YouTube!** 🎥
+---
+layout: post
+date: 2026-10-20 07:59:00-0400
+inline: true
+related_posts: false
+---
+
+**New video on YouTube!** 🎥
 
 My new video on **Data Cleaning and Exploratory Data Analysis (EDA) with Pandas** is now up on [The NLP Node](https://www.youtube.com/@TheNLPNode)! 🐍📊
 
