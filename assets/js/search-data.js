@@ -396,14 +396,14 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-the-java-repo-and-slides-for-cs201-data-structures-amp-amp-algorithms-course-are-now-on-my-github",
+    },{id: "news-the-java-repo-and-slides-for-cs201-data-structures-amp-amp-algorithms-course-are-now-on-my-github",
           title: 'The Java repo and slides for CS201 Data Structures &amp;amp;amp; Algorithms course are...',
           description: "",
           section: "News",},{id: "news-our-paper-a-semi-automated-approach-to-the-annotation-of-argument-structures-in-turkish-datasets-is-now-published-in-the-proceedings-of-the-13th-global-wordnet-conference-read-it-on-the-acl-anthology",
           title: 'Our paper, “A Semi-Automated Approach to the Annotation of Argument Structures in Turkish...',
+          description: "",
+          section: "News",},{id: "news-we-developed-a-rule-based-algorithm-that-generates-morphosyntactic-features-from-finite-state-transducer-fst-analyzer-outputs-and-used-it-to-unify-turkish-universal-dependencies-ud-treebanks-our-related-journal-paper-semi-automated-integration-of-morphosyntactic-features-across-turkish-ud-treebanks-is-currently-under-revision-hopefully-it-will-be-published-soon-sparkles-smile",
+          title: 'We developed a rule-based algorithm that generates morphosyntactic features from finite-state transducer (FST)...',
           description: "",
           section: "News",},{id: "projects-custom-amr-graph-builder",
           title: 'Custom AMR Graph Builder',
