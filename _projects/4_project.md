@@ -1,81 +1,61 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
-published: false
+title: Housing Price Prediction
+description: Predicting apartment prices in Istanbul using real-estate listing data and machine learning
+img: assets/img/regression.jpeg
+importance: 4
+category: work
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This machine learning project investigates **apartment price prediction in Istanbul** using real-estate listing data collected from [Hepsiemlak](https://www.hepsiemlak.com/). It explores how property characteristics, including location, floor area, room count, and building age, relate to listing prices and how these features can be used to estimate property values.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The project combines data cleaning, exploratory data analysis, feature analysis, and predictive modeling in a series of Jupyter notebooks.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**[View the Project on GitHub](https://github.com/neslihancesurr/housing-models)**
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Data Collection & Preprocessing
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The project uses apartment listing data stored in JSON format. The raw dataset, `novemberdata.json`, contains property information collected from Hepsiemlak, while `cleaned_data_model.json` contains the processed data used for modeling.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The preprocessing pipeline focuses on transforming raw listing attributes into usable numerical features.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+1. **Data Inspection:** Examine the structure and quality of the collected property data.
+2. **Data Cleaning:** Convert prices, floor areas, room counts, and other attributes into usable formats.
+3. **Outlier Handling:** Identify and handle invalid values and outliers that may affect model performance.
+4. **Feature Preparation:** Produce a cleaned dataset suitable for exploratory analysis and regression modeling.
 
-{% raw %}
+## Exploratory Data Analysis
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+The `emlak-correlations.ipynb` notebook investigates relationships between property attributes and listing prices using statistical analysis and visualizations.
 
-{% endraw %}
+The analysis explores how factors such as apartment size, room count, building age, and location relate to price, helping identify potentially informative features for predictive modeling.
+
+## Machine Learning Models
+
+The project implements and compares two regression approaches using scikit-learn.
+
+### Linear Regression
+
+The `emlak-linear.ipynb` notebook develops a linear regression model to estimate apartment prices from the prepared property features. Cross-validation is used to assess model performance, and an example demonstrates how the trained model can generate price predictions.
+
+### Random Forest Regression
+
+The `emlak-randomforest.ipynb` notebook applies random forest regression to the same prediction task. This tree-based ensemble approach can capture nonlinear relationships and interactions between property attributes that a linear model may not represent adequately.
+
+Both approaches are evaluated using validation metrics, including **Mean Absolute Error (MAE)** and **Normalized Absolute Error (NAE)**.
+
+## Project Workflow
+
+The notebooks are organized into a sequential workflow:
+
+1. `emlak-data-cleaning.ipynb` — data preprocessing and feature preparation.
+2. `emlak-correlations.ipynb` — exploratory data analysis and correlation visualizations.
+3. `emlak-linear.ipynb` — linear regression and cross-validation.
+4. `emlak-randomforest.ipynb` — random forest regression and cross-validation.
+
+## Technologies
+
+**Python · Jupyter Notebook · pandas · NumPy · scikit-learn · Matplotlib · Seaborn · Machine Learning · Regression Analysis**
+
+This project demonstrates an end-to-end workflow for **tabular machine learning**, from preparing real-world data to exploring feature relationships and comparing predictive models. It also provides a foundation for further work on feature engineering, model evaluation, and data-driven analysis of the Istanbul housing market.
