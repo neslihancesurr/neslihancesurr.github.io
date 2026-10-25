@@ -418,9 +418,9 @@ ninja.data = [{
           description: "Developing standard annotation guidelines for Abstract Meaning Representation in Turkish",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-automatic-semantic-frame-classification",
-          title: 'Automatic Semantic Frame Classification',
-          description: "Classifying semantic frames using sentence embeddings",
+            },},{id: "projects-framenet-semantic-frame-classification",
+          title: 'FrameNet Semantic Frame Classification',
+          description: "Sentence embedding-based semantic frame retrieval for Turkish lexical concepts using English FrameNet",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
