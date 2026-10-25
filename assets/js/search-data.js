@@ -423,6 +423,11 @@ ninja.data = [{
           description: "Sentence embedding-based semantic frame retrieval for Turkish lexical concepts using English FrameNet",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-housing-price-prediction",
+          title: 'Housing Price Prediction',
+          description: "Predicting apartment prices in Istanbul using real-estate listing data and machine learning",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
