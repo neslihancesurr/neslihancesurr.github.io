@@ -55,3 +55,7 @@ nav_order: 3
 
 ---
 
+### Online Teaching
+
+I also have a Youtube Channel called <a href="https://www.youtube.com/@TheNLPNode" target="_blank"> the NLP Node!</a>
+For now, I mostly upload videos related to my TA work, but I'd love to create more educational content for a broader audience in the future.
