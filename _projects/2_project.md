@@ -12,6 +12,8 @@ This Python project uses **Scrapy** to crawl apartment listings from [Hepsiemlak
 
 The scraper starts from Istanbul apartment sale listings, navigates through paginated results, follows individual advertisement links, and collects property attributes from each listing.
 
+**[View the Project on GitHub](https://github.com/neslihancesurr/hepsiemlak-webscraping)**
+
 ## Extracted Property Information
 
 The spider extracts a range of real-estate attributes, including:
